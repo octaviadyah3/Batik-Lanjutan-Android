@@ -1,8 +1,21 @@
-Tugas Akhir matkul pemrograman perangkat bergerak 
+# Pembuatan Aplikasi Batik (Pemrograman Perangkat Bergerak)
 
-Nama Anggota Kelompok
-1. Dia Rohma Octavia (202069040049)
-2. Yulia Husna Dewi (202069040069)
-3. Shila Nadila (202069040058)
+## Data Diri
 
-Aplikasi Pengenalan Seni Kain (Batik)
+|||
+|--|--|
+|NIM|202069040049|
+|Nama|[Dia Rohma Octavia]|
+|Kelas|TI-Mobile|
+
+|||
+|--|--|
+|NIM|202069040069|
+|Nama|[Yulia Husna Dewi]|
+|Kelas|TI-Mobile|
+
+|||
+|--|--|
+|NIM|202069040058|
+|Nama|[Shila Nadila]|
+|Kelas|TI-Mobile|
