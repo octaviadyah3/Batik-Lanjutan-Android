@@ -50,8 +50,8 @@
         android:layout_height="40dp"
         android:text="Hallo Everyone!"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="60dp" />
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="96dp" />
 
     <TextView
         android:id="@+id/textView3"
