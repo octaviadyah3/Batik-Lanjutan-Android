@@ -56,9 +56,9 @@ public class BatikData {
             "Magetan",
     };
     private static String [] pengertianBatik = {
-                "Secara bahasa, batik berasal dari kata mbat yang berarti melempar berkali-kali dan tik yang berarti titik.",
-                "Secara istilah, seni batik adalah teknik menggambar di atas kain dengan memanfaatkan lilin dan canting sebagai alat dan bahan pembuatannya.",
-        };
+            "Secara bahasa, batik berasal dari kata mbat yang berarti melempar berkali-kali dan tik yang berarti titik.",
+            "Secara istilah, seni batik adalah teknik menggambar di atas kain dengan memanfaatkan lilin dan canting sebagai alat dan bahan pembuatannya.",
+    };
     private static String [] sejarahBatik = {
             "Kesenian batik paling tua ditemukan di abad ke-17 masehi dan 18 masehi pada masa kerajaan Majapahit. Saat itu batik hanya digunakan oleh orang-orang keraton dan pengikutnya. Namun, lambat lain seni batik juga disebarkan di luar keraton dan menjadi pakaian yang juga dikenakan oleh masyarakat umum.",
             "Batik menjadi bentuk perlawanan dan perjuangan ekonomi masyarakat pesisir, terutama bagi yang beragama Islam dan beroperasi sebagai pedagang. Dulu, batik yang dibuat untuk keraton merupakan batik tulis. ",
