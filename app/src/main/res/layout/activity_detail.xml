@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailActivity">
+
+    <ImageView
+        android:id="@+id/imageBatik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/batiksimbut" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Deskripsi"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBatik" />
+
+    <TextView
+        android:id="@+id/batikDeskripsi"
+        android:layout_width="333dp"
+        android:layout_height="194dp"
+        android:text="Motif batik Simbut berbentuk daun yang menyerupai daun talas.
+motif tersebut merupakan motif yang paling sederhana, hanya menyusun dan merapikan
+satu jenis motif saja. Motif simbut berasal dari suku Badui pedalaman diSunda yang
+kental dengan peradaban lama.Namun,seiring dengan berjalannya waktu,para penduduk
+Badui yang menerima modernitas mengembangkan batik ini didaerah pesisir Banten.
+Sehingga batik motif Simbut dikenal juga dengan batik banten"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/motifBatik"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:text="Motif Simbut"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageBatik"
+        app:layout_constraintVertical_bias="0.037" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
