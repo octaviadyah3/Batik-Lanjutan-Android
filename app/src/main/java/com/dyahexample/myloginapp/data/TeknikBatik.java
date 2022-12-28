@@ -8,6 +8,7 @@ public class TeknikBatik {
             "Teknik Cap",
             "Teknik Colet",
     };
+
     private static String[] teknikDeskripsi ={
             "Teknik canting tulis adalah teknik membatik dengan menggunakan alat yang disebut canting. Canting berfungsi untuk menorehkan cairan malam atau lilin pada sebagian pola di kain mori. Teknik ini membutuhkan ketelitian dan keuletan yang tinggi, sehingga tak heran harga batik tulis cukup mahal. Jadi, saat kain dimasukkan ke dalam larutan pewarna, bagian yang tertutup malam tidak terkena warna. Membatik dengan canting tulis disebut juga teknik membatik tradisional yang banyak ditemukan di Jawa. Teknik ini dapat dikatakan sebagai salah satu yang termudah. Teknik celup ikat merupakan pembuatan motif pada kain dengan cara mengikat sebagian kain, lalu dicelupkan ke dalam larutan pewarna. Setelah diangkat dari larutan pewarna, ikatan dibuka sehingga bagian yang diikat tidak terkena warna.",
             "Teknik ini dapat dikatakan sebagai salah satu yang termudah. Teknik celup ikat merupakan pembuatan motif pada kain dengan cara mengikat sebagian kain, lalu dicelupkan ke dalam larutan pewarna. Setelah diangkat dari larutan pewarna, ikatan dibuka sehingga bagian yang diikat tidak terkena warna. Teknik celup ikat ini menggunakan tali, benang, dan karet sebagai bahan penghambat atau perintang warna. Celup ikat dikenal di beberapa daerah di Indonesia dengan nama jumputan, tritik (Jawa Tengah dan Yogyakarta) , Sasirangan (Banjarmasin), dan Pelangi (Palembang)",
