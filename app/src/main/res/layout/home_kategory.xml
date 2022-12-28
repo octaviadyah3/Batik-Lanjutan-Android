@@ -46,12 +46,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="273dp"
-        android:layout_height="40dp"
+        android:layout_width="251dp"
+        android:layout_height="51dp"
         android:text="Hallo Everyone!"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="96dp" />
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="56dp" />
 
     <TextView
         android:id="@+id/textView3"
