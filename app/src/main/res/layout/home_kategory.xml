@@ -58,7 +58,7 @@
         android:layout_width="137dp"
         android:layout_height="47dp"
         android:text="Kategori"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="39dp"
         tools:layout_editor_absoluteY="290dp" />
