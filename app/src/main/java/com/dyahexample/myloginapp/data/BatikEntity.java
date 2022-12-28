@@ -9,7 +9,6 @@ public class BatikEntity implements Parcelable {
     private int gambar;
     private String asal;
 
-
     protected BatikEntity(Parcel in) {
         name = in.readString();
         deskripsi = in.readString();
