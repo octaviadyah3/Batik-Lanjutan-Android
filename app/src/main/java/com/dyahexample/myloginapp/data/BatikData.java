@@ -2,6 +2,8 @@ package com.dyahexample.myloginapp.data;
 
 import com.dyahexample.myloginapp.R;
 
+import java.util.ArrayList;
+
 public class BatikData {
     private static String[] batikName = {
             "Batik Parang Kusumo",
@@ -55,4 +57,17 @@ public class BatikData {
             "Yogyakarta",
             "Magetan",
     };
+
+    public static ArrayList<BatikEntity>getListBatik(){
+    ArrayList<BatikEntity>list = new ArrayList<>();
+    for (int position = 0; position <batikName.length; position++){
+        BatikEntity batikEntity = new BatikEntity();
+        batikEntity.setName(batikName[position]);
+        batikEntity.setDeskripsi(batikDeskripsi[position]);
+        batikEntity.setGambar(batikGambar[position]);
+        batikEntity.setBatik(asalBatik[position]);
+        list.add(batikEntity);
+    }
+    return list;
+    }
 }
