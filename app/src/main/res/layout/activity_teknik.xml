@@ -6,42 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".teknikActivity">
 
+
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="131dp"
-        tools:layout_editor_absoluteY="78dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/imageView4"
+        android:layout_width="473dp"
+        android:layout_height="295dp"
+        app:srcCompat="@drawable/canting"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-21dp" />
+
+    <LinearLayout
+        android:layout_width="433dp"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="231dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#985830"
+            app:cardCornerRadius="30dp">
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Deskripsi"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="309dp" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="374dp"
+        android:layout_height="205dp"
         android:text="Teknik canting tulis adalah teknik membatik dengan
         menggunakan alat yang disebut canting. Canting berfungsi menorehkan
         cairan malam atau lilin pada sebagian pola di kain mori.
 
         Teknik ini membutuhkan ketelitian dan keuletan yang tinggi,sehingga
         tak heran harga batik tulis cukup mahal"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="357dp" />
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="368dp" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="26dp" />
+    <LinearLayout
+        android:layout_width="168dp"
+        android:layout_height="37dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#985830"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teknik Canting Tulis"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
