@@ -25,16 +25,22 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-        <activity
-            android:name=".detailActivity"
+        </activity><activity
+            android:name=".ui.RagamBatik"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".batikActivity"
+            android:name=".ui.detailActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.batikActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
