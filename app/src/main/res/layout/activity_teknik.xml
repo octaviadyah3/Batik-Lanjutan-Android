@@ -6,30 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".teknikActivity">
 
-
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="473dp"
-        android:layout_height="295dp"
+        android:layout_width="462dp"
+        android:layout_height="292dp"
         app:srcCompat="@drawable/canting"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="-21dp" />
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="-56dp" />
 
     <LinearLayout
-        android:layout_width="433dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="439dp"
         android:layout_height="500dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="231dp">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="226dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="417dp"
+            android:layout_height="483dp"
             app:cardBackgroundColor="#985830"
-            app:cardCornerRadius="30dp">
-
-        </androidx.cardview.widget.CardView>
+            app:cardCornerRadius="30sp" />
     </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView6"
@@ -58,28 +57,22 @@
         tools:layout_editor_absoluteX="19dp"
         tools:layout_editor_absoluteY="368dp" />
 
-    <LinearLayout
-        android:layout_width="168dp"
-        android:layout_height="37dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="32dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardBackgroundColor="#985830"
-            app:cardCornerRadius="15dp">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Teknik Canting Tulis"
-                android:textColor="#FFFFFF"
-                android:textSize="17sp" />
-        </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="201dp"
+        android:layout_height="4dp"
+        android:text="Teknik Canting Tulis"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+</androidx.cardview.widget.CardView>
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
