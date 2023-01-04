@@ -39,7 +39,18 @@
         tools:layout_editor_absoluteX="38dp"
         tools:layout_editor_absoluteY="67dp">
 
-        <Recy
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView16"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_batik"/>
+
 
     </LinearLayout>
 
