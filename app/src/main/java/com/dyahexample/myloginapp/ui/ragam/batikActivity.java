@@ -1,4 +1,4 @@
-package com.dyahexample.myloginapp.ui;
+package com.dyahexample.myloginapp.ui.ragam;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +10,8 @@ import android.widget.Button;
 
 import com.dyahexample.myloginapp.R;
 import com.dyahexample.myloginapp.caramembatikActivity;
-import com.dyahexample.myloginapp.teknikActivity;
+import com.dyahexample.myloginapp.ui.teknik.TeknikActivity;
+import com.dyahexample.myloginapp.ui.teknik.TeknikDetail;
 
 public class batikActivity extends AppCompatActivity {
 
@@ -26,14 +27,14 @@ public class batikActivity extends AppCompatActivity {
         btnRagam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(batikActivity.this,RagamBatik.class);
+                Intent intent = new Intent(batikActivity.this, RagamBatik.class);
                 startActivity(intent);
             }
         });
         btnTeknik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(batikActivity.this, teknikActivity.class);
+                Intent intent = new Intent(batikActivity.this, TeknikActivity.class);
                 startActivity(intent);
             }
         });

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fbcead"
-    tools:context=".ui.ragam.detailActivity">
+    tools:context=".ui.teknik.TeknikDetail">
 
     <ImageView
-        android:id="@+id/imageBatik"
+        android:id="@+id/imageTeknik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,10 +26,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageBatik" />
+        app:layout_constraintTop_toBottomOf="@+id/imageTeknik" />
 
     <TextView
-        android:id="@+id/batikDeskripsi"
+        android:id="@+id/teknikDeskripsi"
         android:layout_width="333dp"
         android:layout_height="194dp"
         android:text="Motif batik Simbut berbentuk daun yang menyerupai daun talas.
@@ -48,7 +48,7 @@ Sehingga batik motif Simbut dikenal juga dengan batik banten"
         app:layout_constraintVertical_bias="0.148" />
 
     <TextView
-        android:id="@+id/motifBatik"
+        android:id="@+id/txtTeknik"
         android:layout_width="111dp"
         android:layout_height="30dp"
         android:background="@color/white"
@@ -59,7 +59,7 @@ Sehingga batik motif Simbut dikenal juga dengan batik banten"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageBatik"
+        app:layout_constraintTop_toTopOf="@+id/imageTeknik"
         app:layout_constraintVertical_bias="0.037" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
