@@ -3,6 +3,7 @@ package com.dyahexample.myloginapp.ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import com.dyahexample.myloginapp.R;
 
 public class detailActivity extends AppCompatActivity {
 
