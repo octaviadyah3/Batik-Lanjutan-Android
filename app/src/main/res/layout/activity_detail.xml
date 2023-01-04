@@ -37,6 +37,7 @@ satu jenis motif saja. Motif simbut berasal dari suku Badui pedalaman diSunda ya
 kental dengan peradaban lama.Namun,seiring dengan berjalannya waktu,para penduduk
 Badui yang menerima modernitas mengembangkan batik ini didaerah pesisir Banten.
 Sehingga batik motif Simbut dikenal juga dengan batik banten"
+        android:textAlignment="textStart"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +52,7 @@ Sehingga batik motif Simbut dikenal juga dengan batik banten"
         android:layout_height="30dp"
         android:background="@color/white"
         android:text="Motif Simbut"
+        android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
