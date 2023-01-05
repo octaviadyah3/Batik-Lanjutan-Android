@@ -9,6 +9,6 @@ public class caramembatikActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_caramembatik);
+        setContentView(R.layout.actifity_ikonmetodemembatik);
     }
 }
