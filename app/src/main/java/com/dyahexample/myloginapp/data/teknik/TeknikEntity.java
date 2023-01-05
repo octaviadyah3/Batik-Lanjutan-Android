@@ -8,12 +8,12 @@ import com.dyahexample.myloginapp.data.batik.BatikEntity;
     public class TeknikEntity implements Parcelable {
         private String teknikBatik;
         private String teknikDeskripsi;
-        private String teknikGambar;
+        private int teknikGambar;
 
         protected TeknikEntity(Parcel in) {
             teknikBatik = in.readString();
             teknikDeskripsi = in.readString();
-            teknikGambar = in.readString();
+            teknikGambar = Integer.parseInt(in.readString());
         }
 
         public static final Creator<TeknikEntity> CREATOR = new Creator<TeknikEntity>() {
@@ -38,8 +38,8 @@ import com.dyahexample.myloginapp.data.batik.BatikEntity;
         public String getTeknikDeskripsi() {return teknikDeskripsi; }
         public void setTeknikDeskripsi(String teknikDeskripsi) {this.teknikDeskripsi = teknikDeskripsi;}
 
-        public String getTeknikGambar() {return teknikGambar; }
-        public void setTeknikGambar(String teknikGambar) {this.teknikGambar = teknikGambar;}
+        public int getTeknikGambar() {return teknikGambar; }
+        public void setTeknikGambar(int teknikGambar) {this.teknikGambar = teknikGambar; }
 
         @Override
         public int describeContents() {
@@ -50,7 +50,7 @@ import com.dyahexample.myloginapp.data.batik.BatikEntity;
         public void writeToParcel(Parcel parcel, int i) {
             parcel.writeString(teknikBatik);
             parcel.writeString(teknikDeskripsi);
-            parcel.writeString(teknikGambar);
+            parcel.writeInt(teknikGambar);
         }
     }
 
