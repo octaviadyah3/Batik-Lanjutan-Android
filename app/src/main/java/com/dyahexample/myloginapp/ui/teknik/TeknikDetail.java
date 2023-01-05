@@ -21,13 +21,13 @@ public class TeknikDetail extends AppCompatActivity {
 
         txtTeknik = findViewById(R.id.txtTeknik);
         txtDeskripsiTeknik = findViewById(R.id.teknikDeskripsi);
-        imgTeknik = findViewById(R.id.imgTeknik);
+        imgTeknik = findViewById(R.id.imageTeknik);
 
         TeknikEntity teknik = getIntent().getParcelableExtra("TEKNIK");
         txtTeknik.setText(teknik.getTeknikBatik());
         txtDeskripsiTeknik.setText(teknik.getTeknikDeskripsi());
         Glide.with(TeknikDetail.this)
-                .load(teknik.get)
+                .load(teknik);
 
     }
 }

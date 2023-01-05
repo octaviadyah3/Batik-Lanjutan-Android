@@ -1,5 +1,6 @@
 package com.dyahexample.myloginapp.data.teknik;
 
+import com.dyahexample.myloginapp.R;
 import com.dyahexample.myloginapp.data.batik.BatikEntity;
 
 import java.util.ArrayList;
@@ -19,6 +20,15 @@ public class TeknikBatik {
             "Metode membatik teknik printing adalah jenis batik baru yang cara pembuatannya melalui proses printing mesin pabrik. Proses pewarnaannya sendiri hanya diwarnai pada satu bagian sisi kain batik saja, sehingga prosesnya lebih efisien. Waktu pembuatannya pun menjadi sangat cepat. Dalam sekali cetak, satu warna hanya membutuhkan waktu 5 menit untuk membuatnya. Tak hanya itu, alat printing yang canggih membuat motif batik memiliki hasil yang detail dan konsisten. Batik printing yang prosesnya cepat dan mudah, biasanya dibanderol harga lebih murah dibandingkan batik tulis atau lainnya yang membutuhkan ketelitian dan kreativitas tinggi. Contoh batik ini banyak ditemukan pada seragam sekolah.",
             "Teknik batik cap dilakukan dengan menggunakan alat canting cap. Caranya, canting cap dicelupkan pada cairan malam, lalu ditorehkan di atas kain mori. Teknik membatik satu ini memiliki kelebihan, yaitu menjadi teknik yang pembuatannya relatif cepat selesai.",
             "Teknik membatik colet biasa disebut juga dengan teknik lukis. Melalui teknik colet, pembatik dapat mengoleskan pewarna kain dengan kuas, lalu melukis motif di atas kain mori. Teknik ini membutuhkan jiwa seni yang tinggi, karena pembuatnya harus jeli dan kreatif. Langkah demi langkah harus dilakukan dengan tepat agar warnanya menyatu dan tidak ada kesenjangan. Dalam batik colet, semakin bagus motifnya, maka harganya juga akan semakin tinggi.",};
+
+    private static int[] teknikGambar ={
+            R.drawable.cantingg,
+            R.drawable.teknikcap,
+            R.drawable.teknikcolet,
+            R.drawable.celupikat,
+    };
+
+
     private static int length;
 
     public static ArrayList<TeknikEntity>getListBatik() {
@@ -27,6 +37,7 @@ public class TeknikBatik {
             TeknikEntity teknikEntity = new TeknikEntity();
             teknikEntity.setTeknikBatik(teknikBatik[position]);
             teknikEntity.setTeknikDeskripsi(teknikDeskripsi[position]);
+            teknikEntity.setTeknikGambar(String.valueOf(teknikGambar[position]));
             list.add(teknikEntity);
         }
         return list;
