@@ -1,4 +1,4 @@
-package com.dyahexample.myloginapp.ui.adapter;
+package com.dyahexample.myloginapp.ui.adapter.teknik;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -17,24 +17,23 @@ import com.dyahexample.myloginapp.ui.teknik.TeknikDetail;
 
 import java.util.ArrayList;
 
-public class TeknikAdapter extends RecyclerView.Adapter<TeknikAdapter.ListViewHolder> {
+
+public class TeknikGridAdapter extends RecyclerView.Adapter<TeknikGridAdapter.GridViewHolder>{
     private ArrayList<TeknikEntity> listTeknik;
-    public TeknikAdapter(ArrayList<TeknikEntity>list){
-        this.listTeknik = list;
-    }
+    public TeknikGridAdapter(ArrayList<TeknikEntity>list) {this.listTeknik = list; }
 
     @NonNull
     @Override
-    public TeknikAdapter.ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public TeknikGridAdapter.GridViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_teknik,parent,false);
-        return new ListViewHolder(view);
+        return new GridViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TeknikAdapter.ListViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull TeknikGridAdapter.GridViewHolder holder, int position) {
         final TeknikEntity teknikEntity = listTeknik.get(position);
         Glide.with(holder.itemView.getContext())
-                .load(teknikEntity.getTeknikBatik())
+                .load(teknikEntity.getTeknikGambar())
                 .into(holder.imgTeknik);
         holder.txtTeknik.setText(teknikEntity.getTeknikBatik());
 
@@ -49,14 +48,12 @@ public class TeknikAdapter extends RecyclerView.Adapter<TeknikAdapter.ListViewHo
     }
 
     @Override
-    public int getItemCount() {
-        return listTeknik.size();
-    }
+    public int getItemCount() {return listTeknik.size();}
 
-    public class ListViewHolder extends RecyclerView.ViewHolder {
+    public class GridViewHolder extends RecyclerView.ViewHolder {
         ImageView imgTeknik;
         TextView txtTeknik;
-        public ListViewHolder(@NonNull View itemView) {
+        public GridViewHolder(@NonNull View itemView) {
             super(itemView);
             txtTeknik = itemView.findViewById(R.id.txt_teknik);
             imgTeknik = itemView.findViewById(R.id.imgTeknik);

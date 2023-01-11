@@ -13,7 +13,7 @@ import com.dyahexample.myloginapp.data.batik.BatikEntity;
         protected TeknikEntity(Parcel in) {
             teknikBatik = in.readString();
             teknikDeskripsi = in.readString();
-            teknikGambar = Integer.parseInt(in.readString());
+            teknikGambar = in.readInt();
         }
 
         public static final Creator<TeknikEntity> CREATOR = new Creator<TeknikEntity>() {
@@ -33,13 +33,13 @@ import com.dyahexample.myloginapp.data.batik.BatikEntity;
         }
 
         public String getTeknikBatik() {return teknikBatik; }
-        public void setTeknikBatik(String batikName) {this.teknikBatik = teknikBatik; }
+        public void setTeknikBatik(String batikName) {this.teknikBatik = batikName; }
 
         public String getTeknikDeskripsi() {return teknikDeskripsi; }
-        public void setTeknikDeskripsi(String teknikDeskripsi) {this.teknikDeskripsi = teknikDeskripsi;}
+        public void setTeknikDeskripsi(String deskripsi) {this.teknikDeskripsi = deskripsi;}
 
         public int getTeknikGambar() {return teknikGambar; }
-        public void setTeknikGambar(int teknikGambar) {this.teknikGambar = teknikGambar; }
+        public void setTeknikGambar(int gambar) {this.teknikGambar = gambar; }
 
         @Override
         public int describeContents() {

@@ -1,4 +1,4 @@
-package com.dyahexample.myloginapp.ui.adapter;
+package com.dyahexample.myloginapp.ui.adapter.batik;
 
 import android.content.Intent;
 import android.view.LayoutInflater;

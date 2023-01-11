@@ -2,18 +2,20 @@ package com.dyahexample.myloginapp.ui.teknik;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.dyahexample.myloginapp.R;
-import com.dyahexample.myloginapp.data.batik.BatikData;
 import com.dyahexample.myloginapp.data.teknik.TeknikBatik;
 import com.dyahexample.myloginapp.data.teknik.TeknikEntity;
-import com.dyahexample.myloginapp.ui.adapter.BatikAdapter;
-import com.dyahexample.myloginapp.ui.adapter.TeknikAdapter;
+import com.dyahexample.myloginapp.ui.adapter.teknik.TeknikAdapter;
+import com.dyahexample.myloginapp.ui.adapter.teknik.TeknikGridAdapter;
 
 import java.util.ArrayList;
 
@@ -44,5 +46,30 @@ public class TeknikActivity extends AppCompatActivity {
         rvTeknik.setLayoutManager(new LinearLayoutManager(this));
         TeknikAdapter teknikAdapter = new TeknikAdapter(list);
         rvTeknik.setAdapter(teknikAdapter);
+    }
+    private void showRecyclerGrid(){
+        rvTeknik.setLayoutManager(new GridLayoutManager(this, 2));
+        TeknikGridAdapter teknikGridAdapter = new TeknikGridAdapter(list);
+        rvTeknik.setAdapter(teknikGridAdapter);
+    }
+
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    public  boolean onOptionsItemSelected(MenuItem item) {
+        setMode(item.getItemId());
+        return super.onOptionsItemSelected(item);
+    }
+    public void setMode(int selectedMode) {
+        switch (selectedMode) {
+            case R.id.action_list:
+                showRecyclerList();
+                break;
+            case R.id.action_grid:
+                showRecyclerGrid();
+                break;
+        }
     }
 }

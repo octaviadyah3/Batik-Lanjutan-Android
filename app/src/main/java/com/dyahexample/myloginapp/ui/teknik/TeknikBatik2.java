@@ -11,12 +11,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.dyahexample.myloginapp.R;
-import com.dyahexample.myloginapp.data.batik.BatikData;
-import com.dyahexample.myloginapp.data.batik.BatikEntity;
 import com.dyahexample.myloginapp.data.teknik.TeknikBatik;
 import com.dyahexample.myloginapp.data.teknik.TeknikEntity;
-import com.dyahexample.myloginapp.ui.adapter.BatikAdapter;
-import com.dyahexample.myloginapp.ui.adapter.TeknikAdapter;
+import com.dyahexample.myloginapp.ui.adapter.teknik.TeknikAdapter;
 
 import java.util.ArrayList;
 

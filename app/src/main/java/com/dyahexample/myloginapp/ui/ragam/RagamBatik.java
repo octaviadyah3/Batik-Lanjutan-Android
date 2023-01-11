@@ -1,6 +1,8 @@
 package com.dyahexample.myloginapp.ui.ragam;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -13,8 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.dyahexample.myloginapp.R;
 import com.dyahexample.myloginapp.data.batik.BatikData;
 import com.dyahexample.myloginapp.data.batik.BatikEntity;
-import com.dyahexample.myloginapp.ui.adapter.BatikAdapter;
-import com.dyahexample.myloginapp.ui.adapter.GridAdapter;
+import com.dyahexample.myloginapp.ui.adapter.batik.BatikAdapter;
+import com.dyahexample.myloginapp.ui.adapter.batik.GridAdapter;
 
 import java.util.ArrayList;
 
@@ -54,4 +56,23 @@ public class RagamBatik extends AppCompatActivity {
         rvBatik.setAdapter(gridAdapter);
 
     }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.option_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        setMode(item.getItemId());
+        return super.onOptionsItemSelected(item);
+    }
+    public void setMode(int selectedMode) {
+        switch (selectedMode) {
+            case R.id.action_list:
+                showRecyclerList();
+                break;
+            case R.id.action_grid:
+                showRecyclerGrid();
+                break;
+        }
+    }
+
 }

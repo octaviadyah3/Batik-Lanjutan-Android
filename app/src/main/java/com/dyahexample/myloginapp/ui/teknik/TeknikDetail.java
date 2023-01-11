@@ -27,7 +27,8 @@ public class TeknikDetail extends AppCompatActivity {
         txtTeknik.setText(teknik.getTeknikBatik());
         txtDeskripsiTeknik.setText(teknik.getTeknikDeskripsi());
         Glide.with(TeknikDetail.this)
-                .load(teknik);
+                .load(teknik.getTeknikGambar())
+                .into(imgTeknik);
 
     }
 }

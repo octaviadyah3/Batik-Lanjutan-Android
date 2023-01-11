@@ -13,35 +13,35 @@
         android:theme="@style/Theme.MyLoginApp"
         tools:targetApi="31">
         <activity
-            android:name=".teknikActivity"
+            android:name=".ui.teknik.TeknikActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".caramembatikActivity"
+            android:name=".ui.ragam.RagamBatik"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.RagamBatik"
+            android:name=".ui.ragam.detailActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.detailActivity"
+            android:name=".ui.ragam.batikActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.batikActivity"
+            android:name=".ui.teknik.TeknikDetail"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
