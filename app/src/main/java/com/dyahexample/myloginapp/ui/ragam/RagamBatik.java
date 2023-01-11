@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,6 +14,7 @@ import com.dyahexample.myloginapp.R;
 import com.dyahexample.myloginapp.data.batik.BatikData;
 import com.dyahexample.myloginapp.data.batik.BatikEntity;
 import com.dyahexample.myloginapp.ui.adapter.BatikAdapter;
+import com.dyahexample.myloginapp.ui.adapter.GridAdapter;
 
 import java.util.ArrayList;
 
@@ -43,5 +45,13 @@ public class RagamBatik extends AppCompatActivity {
         rvBatik.setLayoutManager(new LinearLayoutManager(this));
         BatikAdapter batikAdapter = new BatikAdapter(list);
         rvBatik.setAdapter(batikAdapter);
+    }
+
+
+    private void showRecyclerGrid() {
+        rvBatik.setLayoutManager(new GridLayoutManager(this,2 ));
+        GridAdapter gridAdapter = new GridAdapter(list);
+        rvBatik.setAdapter(gridAdapter);
+
     }
 }
