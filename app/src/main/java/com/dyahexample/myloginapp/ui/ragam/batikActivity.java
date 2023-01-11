@@ -9,9 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.dyahexample.myloginapp.R;
-import com.dyahexample.myloginapp.caramembatikActivity;
 import com.dyahexample.myloginapp.ui.teknik.TeknikActivity;
-import com.dyahexample.myloginapp.ui.teknik.TeknikDetail;
 
 public class batikActivity extends AppCompatActivity {
 
@@ -38,12 +36,6 @@ public class batikActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnCara.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(batikActivity.this, caramembatikActivity.class);
-                startActivity(intent);
-            }
-        });
+
     }
 }

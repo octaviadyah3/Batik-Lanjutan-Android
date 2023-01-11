@@ -3,42 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.teknik.TeknikActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="#fbcead"/>
+        android:layout_height="match_parent"
+        android:background="#fbcead" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="16dp"
         android:orientation="vertical">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_teknik"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="50dp"
-            android:clipToPadding="false"
-            android:scrollbars="none"
-            tools:listitem="@layout/item_teknik" />
-    </LinearLayout>
-
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/textView16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
             android:text="TEKNIK BATIK"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_teknik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView16"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            tools:listitem="@layout/item_teknik"/>
+
+    </LinearLayout>
 </RelativeLayout>

@@ -25,7 +25,7 @@ public class TeknikActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teknikbatiknew);
 
-        rvTeknik = findViewById(R.id.rv_batik);
+        rvTeknik = findViewById(R.id.rv_teknik);
         rvTeknik.setHasFixedSize(true);
 
         list.addAll(TeknikBatik.getListBatik());
