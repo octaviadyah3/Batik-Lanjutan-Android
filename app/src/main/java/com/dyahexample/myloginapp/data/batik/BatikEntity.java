@@ -1,4 +1,4 @@
-package com.dyahexample.myloginapp.data;
+package com.dyahexample.myloginapp.data.batik;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -28,13 +28,19 @@ public class BatikEntity implements Parcelable {
         }
     };
 
+    public BatikEntity() {
+
+    }
+
     public String getName() {return name; }
     public void setName(String batikName) {this.name = batikName; }
 
     public String getDeskripsi() {return deskripsi; }
     public void setDeskripsi(String batikDeskripsi) {this.deskripsi = batikDeskripsi;}
 
-    private int getGambar() {return gambar; }
+    public int getGambar() {
+        return gambar;
+    }
     public void setGambar(int batikGambar) {this.gambar = batikGambar; }
 
     public String getBatik() {return asal; }

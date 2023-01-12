@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#fbcead"
     android:orientation="vertical"
-    tools:context=".ui.batikActivity">
+    tools:context=".ui.ragam.batikActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView android:id="@+id/cv1"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:layout_weight="1"
@@ -17,7 +17,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imgkawung"
+                    android:id="@+id/imgKawung"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
