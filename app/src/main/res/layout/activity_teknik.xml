@@ -44,19 +44,16 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="474dp"
-        android:layout_height="204dp"
-        android:text="Teknik canting tulis adalah teknik membatik dengan
-        menggunakan alat yang disebut canting. Canting berfungsi menorehkan
-        cairan malam atau lilin pada sebagian pola di kain mori.
-
-
-        Teknik ini membutuhkan ketelitian dan keuletan yang tinggi, sehingga tak heran harga batik tulis cukup mahal."
+        android:layout_width="400dp"
+        android:layout_height="194dp"
+        android:text="Teknik canting tulis adalah teknik membatik dengan menggunakan alat yang disebut canting. Canting berfungsi menorehkan cairan malam atau lilin pada sebagian pola di kain mori. Teknik ini membutuhkan ketelitian dan keuletan yang tinggi, sehingga tak heran harga batik tulis cukup mahal."
+        android:gravity="center"
+        android:justificationMode="inter_word"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="368dp" />
+        tools:layout_editor_absoluteY="378dp" />
 
     <LinearLayout
         android:layout_width="168dp"
