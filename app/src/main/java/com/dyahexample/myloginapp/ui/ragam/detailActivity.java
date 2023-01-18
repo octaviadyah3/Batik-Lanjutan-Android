@@ -1,8 +1,11 @@
 package com.dyahexample.myloginapp.ui.ragam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ShareCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,11 +36,12 @@ public class detailActivity extends AppCompatActivity {
     }
 
     public void shareText(View view) {
-        string name = TvName.getText().toString();
-        Intent intent = new Intent(intent.ACTION_SEND);
-        intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT,"done");
-        intent.setText(name);
-        startActivity(intent);
+        String txt = txtNama.getText().toString();
+        String mimeType = "text/plain";
+        ShareCompat.IntentBuilder
+                .from(this)
+                .setType(mimeType)
+                .setText(txt)
+                .startChooser();
     }
 }
