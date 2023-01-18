@@ -1,5 +1,6 @@
 package com.dyahexample.myloginapp.ui.adapter.batik;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,12 +14,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.dyahexample.myloginapp.R;
 import com.dyahexample.myloginapp.data.batik.BatikEntity;
+import com.dyahexample.myloginapp.db.FavDB;
 import com.dyahexample.myloginapp.ui.ragam.detailActivity;
 
 import java.util.ArrayList;
 
 public class BatikAdapter extends RecyclerView.Adapter<BatikAdapter.ListViewHolder> {
 private ArrayList<BatikEntity> listBatik;
+private FavDB favDB;
+private Context context;
 public BatikAdapter(ArrayList<BatikEntity>list){
     this.listBatik = list;
 }
@@ -26,6 +30,7 @@ public BatikAdapter(ArrayList<BatikEntity>list){
     @NonNull
     @Override
     public BatikAdapter.ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        favDB = new FavDB(context);
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_batik,parent,false);
         return new ListViewHolder(view);
     }
@@ -46,6 +51,7 @@ public BatikAdapter(ArrayList<BatikEntity>list){
             holder.itemView.getContext().startActivity(intent);
         }
     });
+
     }
 
     @Override
