@@ -31,4 +31,13 @@ public class detailActivity extends AppCompatActivity {
         txtDeskripsi.setText(batik.getDeskripsi());
 
     }
+
+    public void shareText(View view) {
+        string name = TvName.getText().toString();
+        Intent intent = new Intent(intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT,"done");
+        intent.setText(name);
+        startActivity(intent);
+    }
 }
