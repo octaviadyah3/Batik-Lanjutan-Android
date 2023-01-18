@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.dyahexample.myloginapp.R;
 
 import com.bumptech.glide.Glide;
+import com.dyahexample.myloginapp.R;
 import com.dyahexample.myloginapp.data.batik.BatikEntity;
 import com.dyahexample.myloginapp.ui.ragam.detailActivity;
 
@@ -33,7 +33,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.GridViewHolder
     @Override
     public void onBindViewHolder(@NonNull GridAdapter.GridViewHolder holder, int position) {
         BatikEntity batikEntity = listBatik.get(position);
-        Glide.with(holder.itemView.getContext())
+         Glide.with(holder.itemView.getContext())
                 .load(batikEntity.getGambar())
                 .into(holder.imgBatik);
         holder.txtBatik.setText(batikEntity.getName());

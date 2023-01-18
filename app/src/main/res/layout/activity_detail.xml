@@ -32,14 +32,10 @@
         android:id="@+id/batikDeskripsi"
         android:layout_width="333dp"
         android:layout_height="194dp"
-        android:text="Motif batik Simbut berbentuk daun yang menyerupai daun talas.
-motif tersebut merupakan motif yang paling sederhana, hanya menyusun dan merapikan
-satu jenis motif saja. Motif simbut berasal dari suku Badui pedalaman diSunda yang
-kental dengan peradaban lama.Namun,seiring dengan berjalannya waktu,para penduduk
-Badui yang menerima modernitas mengembangkan batik ini didaerah pesisir Banten.
-Sehingga batik motif Simbut dikenal juga dengan batik banten"
-        android:textAlignment="textStart"
-        android:layout_gravity="center_vertical|end"
+        android:text="Motif batik Simbut berbentuk daun yang menyerupai daun talas. motif tersebut merupakan motif yang paling sederhana, hanya menyusun dan merapikan satu jenis motif saja. Motif simbut berasal dari suku Badui pedalaman diSunda yang kental dengan peradaban lama. Namun,seiring dengan berjalannya waktu, para penduduk Badui yang menerima modernitas mengembangkan batik ini didaerah pesisir Banten. Sehingga batik motif Simbut dikenal juga dengan batik banten"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:justificationMode="inter_word"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
