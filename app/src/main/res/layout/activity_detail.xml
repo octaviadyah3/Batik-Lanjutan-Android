@@ -39,6 +39,7 @@ kental dengan peradaban lama.Namun,seiring dengan berjalannya waktu,para pendudu
 Badui yang menerima modernitas mengembangkan batik ini didaerah pesisir Banten.
 Sehingga batik motif Simbut dikenal juga dengan batik banten"
         android:textAlignment="textStart"
+        android:layout_gravity="center_vertical|end"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
