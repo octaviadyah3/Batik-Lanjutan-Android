@@ -1,4 +1,4 @@
-# Pembuatan Aplikasi Batik (Pemrograman Perangkat Bergerak)
+# Pembuatan Aplikasi Batik lanjutan (Pemrograman Perangkat Bergerak)
 
 ## Data Diri
 
