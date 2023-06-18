@@ -33,17 +33,17 @@
         android:id="@+id/teknikDeskripsi"
         android:layout_width="333dp"
         android:layout_height="194dp"
-        android:text="Teknik canting tulis adalah teknik membatik dengan menggunakan  alat yang disebut canting. Canting berfungsi untuk menorehkan cairan malam atau lilin pada sebagian pola dikakain mori. Teknik ini membutuhkan ketelitian dan keuletan yang tinggi, sehingga tak heran harga batik tulis cukup mahal"
-        android:textAlignment="center"
         android:gravity="center"
         android:justificationMode="inter_word"
+        android:text="Teknik canting tulis adalah teknik membatik dengan menggunakan  alat yang disebut canting. Canting berfungsi untuk menorehkan cairan malam atau lilin pada sebagian pola dikakain mori. Teknik ini membutuhkan ketelitian dan keuletan yang tinggi, sehingga tak heran harga batik tulis cukup mahal"
+        android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <TextView
         android:id="@+id/txtTeknik"
@@ -59,6 +59,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageTeknik"
         app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notify me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
