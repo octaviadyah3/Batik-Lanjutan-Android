@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.InsertActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teknik Membatik"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Form input -->
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Batik"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etTeknik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teknik Batik"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Tombol simpan -->
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Daftar batik -->
+    <TextView
+        android:id="@+id/tvDaftarBatik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Batik"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/listViewBatik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
